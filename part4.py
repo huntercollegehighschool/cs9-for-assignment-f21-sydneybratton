@@ -40,3 +40,21 @@ fizz
 """
 
 # write your code here 
+number = int(input("Enter a number: "))
+
+def divisible_by_3(number):
+  if i%3 == 0:
+    return True
+def divisible_by_5(number):
+  if i%5 == 0:
+    return True
+
+for i in range(1, number+1):
+    if divisible_by_3(i) and divisible_by_5(i):
+      print("fizzbuzz")
+    elif divisible_by_3(i):
+      print("fizz")
+    elif divisible_by_5(i):
+      print("buzz")
+    else:
+      print(i)
